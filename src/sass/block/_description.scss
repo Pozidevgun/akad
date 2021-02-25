@@ -1,0 +1,29 @@
+.descr {
+	font-family: 'OpenSans', sans-serif;
+	font-size: 14pt;
+	text-align: center;
+	color: #999999;
+
+	&--left {
+		text-align: left;
+	}
+
+	&--lh {
+		line-height: 2;
+	}
+
+	&--italic {
+		font-style: italic;
+	}
+
+	&--mini {
+		font-size: 10pt;
+		text-decoration: none;
+	}
+}
+
+@include media-query(550) {
+	.descr {
+		font-size: 10pt;
+	}
+}

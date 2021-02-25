@@ -1,0 +1,46 @@
+.advantages {
+	padding: 0px 10px 100px 10px;
+
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		text-align: center;
+		flex-basis: 20%;
+	}
+
+	&__img {
+		margin-bottom: 20px;
+		height: 53px;
+
+		&--bgbot {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& .title__back span {
+				top: 50%;
+			}
+		}
+
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+}
+
+@include media-query(830) {
+	.advantages {
+		&__item {
+			flex-basis: 49%;
+			margin-bottom: 20px;
+		}
+	}
+}

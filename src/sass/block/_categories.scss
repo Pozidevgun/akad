@@ -1,0 +1,25 @@
+.categories {
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__link {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #999;
+		text-decoration: none;
+		color: #999999;
+		padding: 10px;
+
+		&:hover {
+			border-color: $main;
+			color: $main;
+			transition: all .2s;
+		}
+	}
+}

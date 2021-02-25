@@ -1,0 +1,35 @@
+.footer {
+	padding: 40px 10px;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__bot {
+		text-align: right;
+	}
+}
+
+@include media-query(950) {
+	.footer {
+		&__wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__sign {
+			display: none;
+		}
+	}
+}

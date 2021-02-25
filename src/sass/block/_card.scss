@@ -1,0 +1,73 @@
+.card {
+	display: flex;
+	flex-basis: 32%;
+	flex-direction: column;
+
+	&--mini {
+		flex-basis: 25%;
+	}
+
+	&--animation {
+		transition: .7s;
+
+		&:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+		}
+	}
+
+	&--border {
+		border-top: 5px solid $main;
+		padding: 50px 10px 50px 30px;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: -1px;
+			right: 0;
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 0px solid transparent;
+			border-top: 10px solid #7beec7;
+		}
+	}
+
+
+	&__price {
+		margin-bottom: 40px;
+	}
+
+	&__list {
+		margin-bottom: 40px;
+	}
+
+
+
+	&__top {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 15px;
+	}
+
+	&__img {
+		padding: 10px 20px;
+		background-color: $main;
+		margin-right: 10px;
+	}
+}
+
+@include media-query(830) {
+	.card {
+		flex-basis: 49%;
+
+		&--mini {
+			flex-basis: 25%;
+		}
+
+		&.mr {
+			margin-right: 0px;
+		}
+	}
+}

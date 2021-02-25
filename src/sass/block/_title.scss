@@ -1,0 +1,72 @@
+.title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	&--h1 {
+		font-size: 48pt;
+	}
+
+	&--h2 {
+		font-size: 30pt;
+	}
+
+	&--h3 {
+		font-size: 14pt;
+	}
+
+	&--h4 {
+		font-size: 10pt;
+	}
+
+	&--white {
+		color: #ffffff;
+		font-size: 24pt;
+		line-height: 1.5;
+	}
+
+	&--form {
+		font-size: 18pt;
+	}
+
+	&__back {
+		position: relative;
+
+		& span {
+			position: absolute;
+			content: "";
+			width: 90%;
+			height: 30px;
+			left: 0;
+			top: 50%;
+			background: $main;
+			z-index: -1;
+		}
+
+		&--img {
+			& span {
+				top: 0;
+			}
+		}
+	}
+}
+
+@include media-query (830) {
+	.title {
+		&--h1 {
+			font-size: 36pt;
+		}
+
+		&--h2 {
+			font-size: 18pt;
+		}
+	}
+}
+
+@include media-query(550) {
+	.title {
+		&--form {
+			font-size: 12pt;
+		}
+	}
+}

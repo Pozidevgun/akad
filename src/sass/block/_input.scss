@@ -1,0 +1,50 @@
+.input {
+	width: 100%;
+	color: $grey;
+	font-size: 11pt;
+	font-weight: 700;
+	padding: 20px;
+	border: 1px solid #cdcdcd;
+	outline: none;
+
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 17px;
+		height: 17px;
+		fill: #60606e;
+		opacity: 1;
+
+		&--right {
+			right: 0;
+		}
+	}
+
+	&--bg {
+		background-color: rgba(241, 255, 43, 0.2);
+	}
+
+}
+
+.input-search {
+	padding: 10px;
+	border: none;
+	background-color: #ececec;
+	font-weight: 700;
+	color: #999999;
+	width: 100%;
+
+	&:focus .input__img {
+		opacity: 1;
+
+	}
+}
+
+
+@include media-query(550) {
+	.input {
+		font-size: 10pt;
+	}
+}

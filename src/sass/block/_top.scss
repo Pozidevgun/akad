@@ -1,0 +1,37 @@
+.top {
+	background: url(../img/homepage/header.jpg) no-repeat;
+	padding-top: 45px;
+	margin-bottom: 120px;
+
+	&--about {
+		background: url(../img/about/header.jpg) no-repeat;
+		background-size: cover;
+		padding-bottom: 200px;
+	}
+
+	&__title {
+		text-align: center;
+		margin: 250px 0 20px;
+	}
+
+	&__subtitle {
+		text-align: center;
+	}
+
+	&__slogan {
+
+		margin-top: 300px;
+	}
+
+	&__slider {
+		margin-top: 120px;
+	}
+
+}
+
+@include media-query (600) {
+	.top {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

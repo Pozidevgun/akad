@@ -1,0 +1,9 @@
+@mixin media-query($media){
+  @media (max-width: $media + px){
+    @content;
+  }
+}
+  @mixin box($width, $height) {
+    width: $width;
+    height: $height;
+  }

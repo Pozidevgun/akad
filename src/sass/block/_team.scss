@@ -1,0 +1,55 @@
+.team {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__item {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: #60606e;
+		background-color: $main;
+		font-family: 'OpenSans', sans-serif;
+		font-weight: 700;
+		opacity: 0;
+		transition: all .5s;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	&__name {
+		margin-bottom: 10px;
+	}
+
+	&__read {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #efeff0;
+		padding: 40px 20px;
+
+		& .descr {
+			max-width: 700px;
+		}
+	}
+}
+
+@include media-query(550) {
+	.team {
+		justify-content: center;
+	}
+}

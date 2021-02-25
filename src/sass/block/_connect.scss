@@ -1,0 +1,39 @@
+.connect {
+	padding: 40px;
+	background-color: $main;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0px 10px;
+	}
+
+	&__send {
+		flex-basis: 48%;
+	}
+
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__form {
+		background-color: #fff;
+		padding: 20px;
+		flex-basis: 48%;
+	}
+}
+
+@include media-query(830) {
+	.connect {
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__send {
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+}

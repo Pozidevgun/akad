@@ -1,0 +1,69 @@
+@import 'base/font';
+@import 'base/color';
+@import 'base/mixin';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16pt;
+    color: $grey;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    &--header {
+        max-width: 1300px;
+    }
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+@import 'block/header';
+@import 'block/nav';
+@import 'block/logo';
+@import 'block/top';
+@import 'block/slogan';
+@import 'block/_title';
+@import 'block/slider';
+@import 'block/slick';
+@import 'block/slick';
+@import 'block/button';
+@import 'block/description';
+@import 'block/content';
+@import 'block/service';
+@import 'block/portfolio';
+@import 'block/_connect';
+@import 'block/form';
+@import 'block/input';
+@import 'block/footer';
+@import 'block/sign';
+@import 'block/icon';
+@import 'block/hidden';
+@import 'block/about';
+@import 'block/card';
+@import 'block/team';
+@import 'block/partners';
+@import 'block/blog';
+@import 'block/_search';
+@import 'block/tags';
+@import 'block/post';
+@import 'block/categories';
+@import 'block/archives';
+@import 'block/contact';
+@import 'block/textarea';
+@import 'block/work';
+@import 'block/advantages';

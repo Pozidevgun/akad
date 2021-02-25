@@ -1,0 +1,78 @@
+.button {
+	padding: 20px 45px;
+	color: #ffffff;
+	background-color: $main;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12pt;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+
+
+
+	&--white {
+		background-color: #ffffff;
+		color: $main;
+
+		&:hover {
+			background-color: #60606e;
+			color: #ffffff;
+			transition: .3s;
+		}
+	}
+
+	&--form {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	&--mini {
+		padding: 10px 20px;
+	}
+
+	&--mw {
+		max-width: 155px;
+	}
+
+
+	&-choose {
+		text-transform: uppercase;
+		font-size: 10pt;
+		font-weight: 700;
+		line-height: 2.5;
+		font-family: 'Montserrat', sans-serif;
+		cursor: pointer;
+
+		& span {
+			padding: 5px 20px;
+		}
+
+		&--ml {
+			margin-left: 20px;
+		}
+
+		&--grey span {
+			background-color: #e5e5e5;
+			color: $grey;
+		}
+
+		&--active span {
+			background-color: $main;
+			color: #ffffff;
+		}
+
+
+	}
+}
+
+
+@include media-query(550) {
+	.button {
+		&--form {
+			position: relative;
+			margin-top: 20px;
+		}
+	}
+}

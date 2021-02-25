@@ -1,0 +1,39 @@
+.about {
+
+	padding: 0px 10px 100px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__subtitle {
+		font-family: 'OpenSans', sans-serif;
+		font-size: 10pt;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__item:first-child {
+		margin-right: 20px;
+	}
+}
+
+@include media-query(650) {
+	.about {
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&__item:first-child {
+			margin-right: 0px;
+			margin-bottom: 20px;
+		}
+	}
+}
