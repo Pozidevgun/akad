@@ -5,3 +5,9 @@ package.json
 package-lock.json
 
 node_modules/*
+
+# Маркетингова аналітика
+marketing_analytics/.env
+marketing_analytics/data/
+__pycache__/
+*.pyc
